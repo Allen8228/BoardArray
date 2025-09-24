@@ -21,9 +21,9 @@ class BoardArray : public Board {
                 index++;
                 return;
             }
-             int pos = index; // default = last position
+             int pos = index; 
             for (int i = 0; i < index; i++) {
-                if (entry->compare(&array[i])) { // if new score > current score
+                if (entry->compare(&array[i])) { 
                     pos = i;
                     break;
                      }
@@ -33,7 +33,7 @@ class BoardArray : public Board {
                 return;
              }
               if (index < SIZE) {
-                index++; // we have room → increase count
+                index++; 
             }
             for (int j = index - 1; j > pos; j--) {
                 array[j] = array[j - 1];
